@@ -1,0 +1,3 @@
+console.log("Hello World");
+document.write("Hi");
+alert("You are now a programmer");
