@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Basic JavaScript</h1>
+    <script>
+      // variables
+      // variables can be declared with var, let, const
+
+      // strings
+      var name = "Harshdeep";
+      document.write(name);
+      console.log("My name is " + name);
+
+      // integers
+      var a = 9567;
+      var b = 8923;
+      var add = a + b;
+      console.log("The sum of a & b is " + add);
+
+      // float
+      var c = 5265.65;
+      var d = 6659.965;
+      var minus = c - d;
+      console.log("The difference between numbers is " + minus);
+
+      // boolean
+      var e = 264; //-->single equal sign assigns the value to a variable
+      var f = "264";
+      console.log(e == f); //-->double equals sign compares the values of variables without comparing the data types of both variables
+      console.log(e === f);//-->triple equals sign compares the values of variables as well as the data types of both variables
+    </script>
+  </body>
+</html>
