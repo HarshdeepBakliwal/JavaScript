@@ -8,35 +8,35 @@
   </head>
   <body>
     <script>
-      let a = 28;
-      let b = 32;
+      let x = 28;
+      let y = 32;
       // Arithematic Operators
-      console.log("a + b = ", a + b);
-      console.log("a - b = ", a - b);
-      console.log("a / b = ", a / b);
-      console.log("a * b = ", a * b);
-      console.log("a % b = ", a % b);
-      console.log("++a = ", ++a);
-      console.log("a++ = ", a++);
-      console.log("--a = ", --a);
-      console.log("a-- = ", a--);
-      console.log("a = ", a);
-      console.log("a-- = ", a--);
+      console.log("x + y = ", x + y);
+      console.log("x - y = ", x - y);
+      console.log("x / y = ", x / y);
+      console.log("x * y = ", x * y);
+      console.log("x % y = ", x % y);
+      console.log("++y = ", ++y);
+      console.log("y++ = ", y++);
+      console.log("--y = ", --y);
+      console.log("y-- = ", y--);
+      console.log("y = ", y);
+      console.log("y-- = ", y--);
 
       // Assignment Operators
-      let assignment = 1;
-      assignment += 5; // same as assignment = assignment + 5
-      console.log("a is now = ", a);
-      assignment -= 5; // same as assignment = assignment - 5
-      console.log("a is now = ", a);
-      assignment *= 5; // same as assignment = assignment * 5
-      console.log("a is now = ", a);
+      let assignment = 4;
+      assignment += 9; // same as assignment = assignment + 9
+      console.log("y is now = ", y);
+      assignment -= 9; // same as assignment = assignment - 9
+      console.log("y is now = ", y);
+      assignment = 5; // same as assignment = assignment 5
+      console.log("y is now = ", y);
       assignment /= 5; // same as assignment = assignment / 5
-      console.log("a is now = ", a);
+      console.log("y is now = ", y);
 
       // Comparison Operators
-      let comp1 = 6;
-      let comp2 = 7;
+      let comp1 = 16;
+      let comp2 = 11;
       console.log("comp1 == comp2 is ", comp1 == comp2);
       console.log("comp1 != comp2 is ", comp1 != comp2);
       console.log("comp1 === comp2 is ", comp1 === comp2);
@@ -44,10 +44,10 @@
       console.log("comp1 > comp2 is ", comp1 > comp2);
 
       // Logical Operators
-      let x = 5;
-      let y = 6;
-      console.log(x < y && x == 5);
-      console.log(x > y || x == 5);
+      let a = 28;
+      let b =23;
+      console.log(a < b && a == 28);
+      console.log(a > b || a == 28);
       console.log(!false);
       console.log(!true);
     </script>
