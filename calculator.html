@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function sum(){
+            var a1=prompt("Enter first addend: ");
+            var b1=prompt("Enter second addend: ");
+            console.log("The sum is: "+(a1+b1));
+        }
+        function difference(){
+            var a2=prompt("Enter minuend: ");
+            var b2=prompt("Enter subtrahend: ");
+            console.log("The difference is: "+(a2-b2));
+        }
+        function product(){
+            var a3=prompt("Enter multiplicand: ");
+            var b3=prompt("Enter multiplier: ");
+            console.log("The product is: "+(a3*b3));
+        }
+        function divide(){
+            var a4=prompt("Enter dividend: ");
+            var b4=prompt("Enter divisor: ");
+            console.log("The quotient is: "+(a4/b4));
+        }
+        function sine(){
+            var a5=prompt("Enter an angle to find the sine of that angle: ");
+            console.log(Math.sin(a5));
+        }
+        function cosine(){
+            var a6=prompt("Enter an angle to find the cosine of that angle: ");
+            console.log(Math.cos(a6));
+        }
+        function tan(){
+            var a7=prompt("Enter an angle to find the tangent of that angle: ");
+            console.log(Math.tan(a7));
+        }
+        function sqrt(){
+            var a8=prompt("Enter the number to find the sq root of it: ");
+            console.log(Math.sqrt(a8));
+        }
+        function power(){
+            var a9=prompt("Enter the base (power): ");
+            a9=Number.parseInt(a9);
+            a10=Number.parseInt(a10);
+            var a10=prompt("Enter the exponent: ");
+            console.log(a9**a10);
+        }
+        sum();
+        difference();
+        product();
+        divide();
+        sine();
+        cosine();
+        tan();
+        sqrt();
+        power();
+        
+    </script>
+</body>
+</html>
