@@ -1,0 +1,23 @@
+var a=1234; // var can be redeclared and reassigned
+var a=234;
+console.log(a);
+let b=4321; // var can't be redeclared but can be reassigned
+b=54321;
+console.log(b);
+const c=2345; // var can neither be redeclared nor be reassigned
+console.log(c);
+// functional scope- var, let, const are accessible only inside a function not outside
+function calc(){
+    var a1=5432;
+    let b1=5678;
+    const c1=4453;
+    console.log(a1);
+    // Block scope- only var is accessible inside and outside a block whereas let and const are only accessible inside the block
+    if(true){
+        var a2=3564;
+        let b2=6594;
+        const c2=658;
+    }
+    console.log(c);
+}
+calc();
