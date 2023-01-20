@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: Border-Box;
+      }
+      Section {
+        height: 100vh;
+        width: 100%;
+        display: Flex;
+        align-items: Center;
+        justify-content: Center;
+        flex-direction: Column;
+      }
+      Button {
+        border: None;
+        outline: None;
+        background-color: Aquamarine;
+        font-size: 24px;
+        font-family: "Montserrat";
+        padding: 20px;
+        cursor: Pointer;
+      }
+      H2 {
+        font-family: "Montserrat";
+        font-size: 30px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <Section>
+        <Button>Change BG Color</Button>
+    </Section>
+    <script>
+      const Button = document.querySelector("Button");
+      const H2El = document.querySelector("H2");
+      const BgEl = document.querySelector("Section");
+      const HexColorEl = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+      Button.addEventListener("Click", () => {
+        let Color = "Red";
+        Color += Math.Random().toString(16).slice(2, 8).toUpperCase();
+        BgEl.style.backgroundColor = Color;
+        H2El.innerText = Color;
+      });
+    </script>
+  </body>
+</html>
