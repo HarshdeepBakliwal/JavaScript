@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      describe("Trees", () => {
+        it("Should add and remove nodes", () => {
+          const root = new Node(1);
+          root.add(2);
+          assert.equal(root.data, 1);
+          assert.equal(root.children[0].data, 2);
+          root.remove(2);
+          assert.equal(root.children.length, 0);
+        });
+        it("Should traverse by breadth", () => {
+          const tree = new Tree();
+          tree.root = new Node(1);
+          tree.root.add(2);
+          tree.root.add(3);
+          tree.root.children[0].add(4);
+          const numbers = [];
+          tree.traverseBF((node) => numbers.push(node.data));
+          assert.deepEqual(numbers, [1, 2, 3, 4]);
+        });
+        it("Should traverse by depth", () => {
+          const tree = new Tree();
+          tree.root = new Node(1);
+          tree.root.add(2);
+          tree.root.add(3);
+          tree.root.children[0].add(4);
+          const numbers = [];
+          tree.traverseDF((node) => numbers.push(node.data));
+          assert.deepEqual(numbers, [1, 2, 4, 3]);
+        });
+      });
+    </script>
+  </body>
+</html>
